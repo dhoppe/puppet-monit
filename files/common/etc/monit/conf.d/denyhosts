@@ -1,0 +1,9 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# /etc/puppet/modules/production/monit/files/common/etc/monit/conf.d/denyhosts
+#
+
+check process denyhosts with pidfile /var/run/denyhosts.pid
+  start program = "/etc/init.d/denyhosts start"
+  stop program = "/etc/init.d/denyhosts stop"
+  if 5 restarts within 5 cycles then timeout

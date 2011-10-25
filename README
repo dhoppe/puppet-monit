@@ -1,0 +1,18 @@
+# Class: monit
+#   This module manages monit
+#
+# Definition:
+#   monit::service
+#
+# Parameters:
+#   -
+#
+# Actions:
+#   Installs the monitrc etc.
+#
+# Requires:
+#   -
+#
+# Sample Usage:
+#   monit::service { "denyhosts": }
+#   monit::service { "fail2ban": }
