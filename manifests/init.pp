@@ -13,7 +13,7 @@ class monit {
 		ensure  => directory,
 		owner   => root,
 		group   => root,
-		mode    => 0700,
+		mode    => 0755,
 		require => Package["monit"],
 	}
 
@@ -48,7 +48,7 @@ define monit::service() {
 	file { "/etc/monit/conf.d/${name}":
 		owner   => root,
 		group   => root,
-		mode    => 0600,
+		mode    => 0644,
 		notify  => Service["monit"],
 		source  => "puppet:///modules/monit/common/etc/monit/conf.d/$name",
 		require => Package["monit"],
