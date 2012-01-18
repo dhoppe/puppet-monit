@@ -10,10 +10,12 @@ class monit {
 	}
 
 	file { "/etc/monit/conf.d":
-		ensure  => directory,
+		force   => true,
+		purge   => true,
+		recurse => true,
 		owner   => root,
 		group   => root,
-		mode    => 0755,
+		mode    => 0644,
 		require => Package["monit"],
 	}
 

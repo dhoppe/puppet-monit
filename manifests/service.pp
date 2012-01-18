@@ -3,7 +3,7 @@ define monit::service() {
 		owner   => root,
 		group   => root,
 		mode    => 0644,
-		source  => "puppet:///modules/monit/common/etc/monit/conf.d/$name",
+		source  => "puppet:///modules/monit/common/etc/monit/conf.d/${name}",
 		notify  => Service["monit"],
 		require => Package["monit"],
 	}
