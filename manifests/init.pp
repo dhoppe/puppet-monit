@@ -4,7 +4,7 @@ class monit {
 		group   => root,
 		mode    => 0644,
 		alias   => "monit",
-		source  => "puppet:///modules/monit/$::lsbdistcodename/etc/default/monit",
+		source  => "puppet:///modules/monit/${::lsbdistcodename}/etc/default/monit",
 		notify  => Service["monit"],
 		require => Package["monit"],
 	}
@@ -24,7 +24,7 @@ class monit {
 		group   => root,
 		mode    => 0600,
 		alias   => "monitrc",
-		content => template("monit/$::lsbdistcodename/etc/monit/monitrc.erb"),
+		content => template("monit/${::lsbdistcodename}/etc/monit/monitrc.erb"),
 		notify  => Service["monit"],
 		require => Package["monit"],
 	}
