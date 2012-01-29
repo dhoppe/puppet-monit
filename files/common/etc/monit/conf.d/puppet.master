@@ -1,0 +1,10 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# /etc/puppet/modules/production/monit/files/common/etc/monit/conf.d/puppet.master
+#
+
+check process puppet-master with pidfile /var/run/puppet/master.pid
+  start program = "/etc/init.d/puppetmaster start"
+  stop program = "/etc/init.d/puppetmaster stop"
+  if failed port 8140 then restart
+  if 5 restarts within 5 cycles then timeout

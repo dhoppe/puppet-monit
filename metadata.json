@@ -6,9 +6,9 @@
   "project_page": "http://github.com/dhoppe/puppet-monit",
   "source": "git://github.com/dhoppe/puppet-monit",
   "summary": "Monit Module",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "checksums": {
-    "Modulefile": "367c896b079bf03df671b23f227a2512",
+    "Modulefile": "6c6c2c1ee4d8b29544e68b09a51e3ee4",
     "README": "1597262bc4f84f6eee2fd1374ca6facf",
     "files/common/etc/monit/conf.d/denyhosts": "0b7acd41bfcddfcfbf5f878a61dd1f1c",
     "files/common/etc/monit/conf.d/fail2ban": "5cac9faf66e3b0dc801b4c1121e1e5e9",
