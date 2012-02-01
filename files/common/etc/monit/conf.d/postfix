@@ -1,0 +1,10 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# /etc/puppet/modules/production/monit/common/etc/monit/conf.d/postfix
+#
+
+check process postfix with pidfile /var/spool/postfix/pid/master.pid
+  start program = "/etc/init.d/postfix start"
+  stop program = "/etc/init.d/postfix stop"
+  if failed port 25 then restart
+  if 5 restarts within 5 cycles then timeout
