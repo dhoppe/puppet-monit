@@ -1,0 +1,9 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# /etc/puppet/modules/production/monit/files/common/etc/monit/conf.d/npcd
+#
+
+check process npcd with pidfile /var/run/npcd.pid
+  start program = "/etc/init.d/npcd start"
+  stop program = "/etc/init.d/npcd stop"
+  if 5 restarts within 5 cycles then timeout
