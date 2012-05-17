@@ -14,5 +14,5 @@
 #   -
 #
 # Sample Usage:
-#   monit::service { "denyhosts": }
-#   monit::service { "fail2ban": }
+#   monit::service { 'denyhosts': }
+#   monit::service { 'fail2ban': }

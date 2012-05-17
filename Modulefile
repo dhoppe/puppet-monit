@@ -1,5 +1,5 @@
 name 'dhoppe-monit'
-version '0.0.20'
+version '0.0.21'
 
 author 'Dennis Hoppe'
 license 'GPLv2'
