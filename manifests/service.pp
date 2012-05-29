@@ -1,5 +1,7 @@
 define monit::service( $owner = 'root', $group = 'root', $mode = '0644', $source = 'UNSET' , $content = 'UNSET' ) {
 
+  include monit
+
   if $source  == 'UNSET' {
     $real_source = "puppet:///modules/monit/common/etc/monit/conf.d/${name}"
   }
@@ -8,7 +10,7 @@ define monit::service( $owner = 'root', $group = 'root', $mode = '0644', $source
   }
 
   $file = "/etc/monit/conf.d/${name}"
-  $require = [ File['/etc/monit/conf.d'], Package['monit'] ]
+  $require = [ File['monit_conf_d'], Class['monit'] ]
 
   if $content != 'UNSET' {
     file {
