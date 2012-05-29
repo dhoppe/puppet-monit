@@ -10,7 +10,7 @@ define monit::service( $owner = 'root', $group = 'root', $mode = '0644', $source
   }
 
   $file = "/etc/monit/conf.d/${name}"
-  $require = [ File['monit_conf_d'], Class['monit'] ]
+  $require = [ File['monit_conf_d'], Package['monit'] ]
 
   if $content != 'UNSET' {
     file {
