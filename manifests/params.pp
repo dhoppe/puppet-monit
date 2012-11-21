@@ -1,6 +1,6 @@
 class monit::params {
   case $::lsbdistcodename {
-    'squeeze', 'maverick', 'natty': {
+    'squeeze', 'natty': {
     }
     default: {
       fail("Module ${module_name} does not support ${::lsbdistcodename}")
