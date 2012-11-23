@@ -8,9 +8,9 @@
   "summary": "Monit Module",
   "version": "0.0.21",
   "checksums": {
-    ".project": "9c043b3a5ca48f90f2478ac887ef5641",
     ".travis.yml": "c4089256774e5cb9094e91a3fe1c2780",
     "Gemfile": "d5ce5c80f3c31e583507eb80b61b7400",
+    "LICENSE": "b234ee4d69f5fce4486a80fdaf4a4263",
     "Modulefile": "9b7b94391ca965fcfd1c74643b69340e",
     "README": "b78e93808fd9a801c1076f9ce92909e6",
     "Rakefile": "17e38802c4cef92b76ce3c00b9e339ec",
