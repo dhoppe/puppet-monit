@@ -19,7 +19,7 @@ class monit::params {
       $ensure_status  = false
       $disabled_hosts = []
     }
-    'wheezy', 'precise': {
+    'wheezy', 'precise', 'quantal': {
       $ensure         = present
       $ensure_enable  = true
       $ensure_running = running
