@@ -19,6 +19,13 @@ class monit::params {
       $ensure_status  = false
       $disabled_hosts = []
     }
+    'wheezy': {
+      $ensure         = present
+      $ensure_enable  = true
+      $ensure_running = running
+      $ensure_status  = true
+      $disabled_hosts = []
+    }
     default: {
       fail("Module ${module_name} does not support ${::lsbdistcodename}")
     }

@@ -27,15 +27,17 @@
     "files/common/etc/monit/conf.d/rsyslog": "c08f17da5df92d2751a7de6302a3a1fa",
     "files/common/etc/monit/conf.d/ssh": "e67d9878534a01af4d10445d572f4787",
     "files/squeeze/etc/default/monit": "631502257ae03ffa2d772d450de6a722",
+    "files/wheezy/etc/default/monit": "6a2dcd36086ed6e8602290e9baa3eb22",
     "manifests/config.pp": "7d910266360bf4abd97040c65a9a4470",
     "manifests/file.pp": "862b7e385d0fda29cc9ed318b53c2085",
     "manifests/init.pp": "119312da8d5ccbc22d26bb374177ac96",
     "manifests/package.pp": "97f8e22dc430f328edb4dff02d91cc96",
-    "manifests/params.pp": "6baeddf6721ed3367a84d8be41f68a7c",
+    "manifests/params.pp": "f718ceee3c858bd88baf94eb2da01c07",
     "manifests/service.pp": "174a2ba26a73adf9933689d7108336cd",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
     "templates/squeeze/etc/monit/monitrc.erb": "0325713a940ecee934d778aacb88a715",
+    "templates/wheezy/etc/monit/monitrc.erb": "8c1e08631a2f7b46b11a3b0f7ae1520b",
     "tests/init.pp": "06bd4e8bffa52eb25c9f5b006c440b13"
   },
   "dependencies": [
