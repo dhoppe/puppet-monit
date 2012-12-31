@@ -1,0 +1,6 @@
+---
+ensure:         present
+ensure_enable:  true
+ensure_running: running
+#disabled_hosts:
+#  - ''
