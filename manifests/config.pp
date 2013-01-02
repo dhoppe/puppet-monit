@@ -11,7 +11,7 @@
 # == Sample Usage:
 #
 class monit::config (
-  $ensure    = hiera('ensure', $monit::params::ensure),
+  $ensure = hiera('ensure', $monit::params::ensure),
 ) inherits monit::params {
   validate_re($ensure, '^(absent|present)$')
 

@@ -15,7 +15,6 @@ class monit::service (
   $ensure_running = hiera('ensure_running', $monit::params::ensure_running),
   $ensure_status  = $monit::params::ensure_status,
   $disabled_hosts = hiera('disabled_hosts', $monit::params::disabled_hosts),
-
 ) inherits monit::params {
   validate_bool($ensure_enable)
   validate_re($ensure_running, '^(running|stopped)$')
