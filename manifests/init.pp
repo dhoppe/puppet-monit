@@ -17,7 +17,7 @@ class monit inherits monit::params {
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    alias   => 'conf.d',
+    alias   => 'monit_conf_d',
     require => Package['monit'],
   }
 
